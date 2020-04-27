@@ -1,0 +1,44 @@
+button {
+    padding: 1rem;
+    color: white;
+    background: hsl(218, 20%, 25%);
+    border-radius: 5px;
+    margin: 0.6rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.display_area_night {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle_img.one {
+background: url('../img/egypt.jpg');
+background-size: cover;
+border-radius: 50%;
+border: 3px solid white;
+height: 90%;
+width: 90%;
+}
+
+ .circle_img.two {
+    background: url('../img/gibber.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    height: 90%;
+    width: 90%;
+}
+
+.circle_img.three {
+    background: url('../img/sahara.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    height: 90%;
+    width: 90%;
+}
