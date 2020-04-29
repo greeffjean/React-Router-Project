@@ -1,7 +1,13 @@
+
+
 .main_wrapper {
 display: flex;
 width: 100vw;
 height: 100vh;
+
+.preloader {
+    display: none;
+}
 
 
 .side_bar{

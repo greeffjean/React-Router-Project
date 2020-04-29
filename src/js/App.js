@@ -18,7 +18,7 @@ class App extends React.Component {
     }
   }
 
-  nightActive(param){
+  nightActive(param) {
     this.setState({
       nightActive: param
     })
@@ -26,14 +26,23 @@ class App extends React.Component {
 
 
 
-
   /* Render */
   render() {
 
-
     return (
       <Router>
-        <div className="main_wrapper"  style={{background: "black"}}>
+
+        <div className="main_wrapper" style={{ background: "black" }}>
+
+          {/* Preloading entire App media, html is hidden not to be used */}
+          <div className="preloader">
+            <img src={require("../img/egypt.jpg")} />
+            <img src={require("../img/sahara.jpg")} />
+            <img src={require("../img/gibber.jpg")} />
+            <img src={require("../img/dusk.jpg")} />
+            <img src={require("../img/night.jpg")} />
+          </div>
+          {/* Preloading entire App media, html is hidden not to be used */}
 
           <div className="side_bar">
             <NavLink onClick={(e) => this.nightActive(false)} to="/"><a style={{ fontFamily: "Oswald" }} >Home</a></NavLink>

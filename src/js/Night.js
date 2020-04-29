@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route, withRouter, NavLink } from "react-router-dom";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+import Background from '../img/night.jpg';
 
 import '../css/Night.scss';
 
@@ -20,12 +20,11 @@ class Night extends React.Component {
 
     /* Render */
     render() {
-        var background = '/img/night.jpg';
-
+  
         return (
             <div style={{
-                position: "absolute", width: "100%", height: "100%", backgroundImage: `url(${background})`, backgroundSize: "cover",
-            }} >
+                position: "absolute", width: "100%", height: "100%",  background: `url(${Background})`,
+                backgroundSize: 'cover' }} >
                 <div className="tint" style={{
                     position: "absolute", width: "100%", height: "100%", display: "flex",
                     flexDirection: "column", justifyContent: "center", alignItems: "center", background: "hsla(0, 0%, 0%, 0.22)"
